@@ -1,2 +1,14 @@
-# Atmos-weather-app
-Atmos is an Android weather forecasting app that displays current weather, hourly forecast, and 5-day forecast using live API data. The app is built using Java and Android Studio with a clean and user-friendly interface.
+# Atmos Weather App
+
+A simple Android weather forecasting app.
+
+Features:
+- Current weather
+- Hourly forecast
+- 5-day forecast
+- Clean UI
+
+Built with:
+- Java
+- OpenWeather API
+- Android Studio
