@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#22FFFFFF"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Condition Title (e.g., "AQI", "UV Index") -->
+        <TextView
+            android:id="@+id/tvConditionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AQI"
+            android:textColor="#CCEAFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:letterSpacing="0.08" />
+
+        <!-- Condition Icon -->
+        <ImageView
+            android:id="@+id/ivConditionIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Condition icon"
+            android:tint="#FFFFFF"
+            android:src="@drawable/ic_aqi" />
+
+        <!-- Condition Value (e.g., "Moderate", "64%") -->
+        <TextView
+            android:id="@+id/tvConditionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

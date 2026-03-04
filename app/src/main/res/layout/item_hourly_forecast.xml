@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="4dp">
+
+    <!-- Hour label (e.g., "2 PM") -->
+    <TextView
+        android:id="@+id/tvHourTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#CCE0F0FF"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <!-- Weather icon -->
+    <ImageView
+        android:id="@+id/ivHourIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Hourly weather icon"
+        android:src="@drawable/ic_weather_sunny"
+        android:tint="#FFFFFF" />
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/tvHourTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--°"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>

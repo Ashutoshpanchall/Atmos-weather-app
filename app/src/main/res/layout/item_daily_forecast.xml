@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingVertical="14dp"
+    android:paddingHorizontal="4dp">
+
+    <!-- Day label (e.g., "Tue") -->
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="#CCE0F0FF"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:letterSpacing="0.04" />
+
+    <!-- Weather icon -->
+    <ImageView
+        android:id="@+id/ivDayIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Daily weather icon"
+        android:src="@drawable/ic_weather_sunny"
+        android:tint="#FFFFFF" />
+
+    <!-- High temperature -->
+    <TextView
+        android:id="@+id/tvDayTempHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--°"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <!-- Low temperature -->
+    <TextView
+        android:id="@+id/tvDayTempLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--°"
+        android:textColor="#99C0D0E0"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp" />
+
+</LinearLayout>
